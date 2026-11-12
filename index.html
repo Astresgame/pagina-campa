@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Espacio de investigación sobre los apartados de la actividad de ISC y las tendencias estratégicas de Gartner 2026.">
+<title>ASTRA / Radar tecnológico 2026</title>
+<style>
+:root{--bg:#070b14;--surface:#101a2b;--surface2:#142239;--ink:#edf4ff;--muted:#a6b5cb;--cyan:#64eee2;--violet:#a99aff;--line:rgba(255,255,255,.12);--amber:#ffc978;--shadow:0 18px 55px #0007}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 0%,#1c5c6540,transparent 34%),radial-gradient(ellipse at 4% 40%,#6353a52c,transparent 28%),var(--bg);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,textarea{font:inherit}a{color:var(--cyan)}.top{position:sticky;top:0;z-index:50;background:#070b14df;border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}.nav{max-width:1250px;margin:auto;padding:13px 5%;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{color:var(--ink);text-decoration:none;font-weight:950;letter-spacing:.16em;font-size:.92rem}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:20px;align-items:center}.navlinks a{color:var(--muted);text-decoration:none;font-size:.9rem}.navlinks a:hover{color:var(--cyan)}.nav-actions{display:flex;gap:9px}.btn,.menu{border:1px solid var(--line);border-radius:999px;padding:9px 15px;background:transparent;color:var(--ink);text-decoration:none;cursor:pointer;font-weight:750}.btn.primary{background:var(--cyan);color:#071319;border-color:var(--cyan)}.btn:hover,.menu:hover{border-color:var(--cyan);transform:translateY(-1px)}.menu{display:none;border-radius:12px}main{max-width:1250px;margin:auto;padding:0 5%}.hero{min-height:75vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;padding:68px 0 48px}.eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:900}.hero h1{font-size:clamp(3.3rem,8vw,7rem);line-height:.94;letter-spacing:-.07em;margin:17px 0 22px}.hero h1 em{font-style:normal;color:var(--cyan)}.hero p,.muted{color:var(--muted);max-width:700px;font-size:1.05rem}.hero-art{min-height:350px;display:grid;place-items:center;position:relative}.planet{width:min(72vw,330px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 34% 29%,#d7fffa 0,#64eee2 8%,#346c91 31%,#25214f 59%,#080c18 74%);box-shadow:0 0 90px #64eee244,inset -25px -30px 55px #030711;position:relative}.planet:before,.planet:after{content:"";position:absolute;inset:-25px;border:1px solid #64eee288;border-radius:50%;transform:rotate(-25deg) scaleY(.32)}.planet:after{inset:-48px;border-color:#a99aff99;transform:rotate(45deg) scaleY(.28)}.planet-label{position:absolute;right:0;bottom:8%;background:#101a2bf2;border:1px solid var(--line);border-radius:16px;padding:13px 18px;box-shadow:var(--shadow)}.planet-label strong{display:block;font-size:1.7rem;color:var(--cyan);line-height:1.1}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.stats{display:flex;gap:20px;flex-wrap:wrap;margin-top:28px;color:var(--muted);font-size:.85rem}.stats b{color:var(--ink)}.section{padding:42px 0 56px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:23px}.section-head h2{font-size:clamp(1.9rem,4vw,3.1rem);line-height:1.05;letter-spacing:-.045em;margin:7px 0}.section-head p{max-width:500px;color:var(--muted);margin:0}.rubric-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.rubric-card{display:flex;gap:17px;align-items:flex-start;text-align:left;color:var(--ink);background:linear-gradient(145deg,#17263d,#101827);border:1px solid var(--line);border-radius:19px;padding:21px;cursor:pointer;min-height:145px;transition:.2s}.rubric-card:hover{transform:translateY(-3px);border-color:#64eee299;box-shadow:var(--shadow)}.rubric-index{flex:0 0 46px;height:46px;display:grid;place-items:center;border-radius:14px;background:#64eee21c;color:var(--cyan);font-weight:950}.rubric-card h3{margin:0 0 7px;font-size:1.08rem;line-height:1.35}.rubric-card p{color:var(--muted);font-size:.9rem;margin:0}.rubric-card small{display:inline-block;margin-top:10px;color:#d5ccff;background:#a99aff18;padding:3px 9px;border-radius:99px}.workspace{display:none;min-height:65vh;padding:25px 0 65px;scroll-margin-top:82px}.workspace.active{display:block;animation:enter .28s ease}@keyframes enter{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}.crumb{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:22px}.back{border:1px solid var(--line);background:transparent;color:var(--muted);padding:9px 14px;border-radius:999px;cursor:pointer}.back:hover{color:var(--cyan);border-color:var(--cyan)}.workspace h2{font-size:clamp(2rem,5vw,3.8rem);line-height:1.02;letter-spacing:-.05em;margin:8px 0 13px}.intro{max-width:900px;color:#cad6e8;font-size:1.05rem}.branch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}.branch{background:linear-gradient(145deg,#142239,#0e1727);border:1px solid var(--line);border-radius:18px;padding:20px}.branch h3{margin:0 0 7px;font-size:1.05rem;color:var(--ink)}.branch p{color:var(--muted);margin:0;font-size:.9rem}.trend-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:25px 0}.theme{padding:18px;border:1px solid var(--line);border-radius:16px;background:#ffffff08}.theme b{font-size:.75rem;letter-spacing:.14em;color:var(--cyan)}.theme h3{margin:6px 0}.theme p{color:var(--muted);margin:0;font-size:.88rem}.trend-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.trend{border:1px solid var(--line);background:linear-gradient(145deg,#17263d,#101827);border-radius:17px;padding:18px}.trend-head{display:flex;gap:13px;align-items:flex-start}.trend-no{flex:0 0 38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#64eee21c;color:var(--cyan);font-weight:900}.trend h3{margin:0 0 4px;font-size:1rem}.trend .category{color:#cfc7ff;font-size:.75rem}.trend p{color:var(--muted);font-size:.88rem;margin:12px 0}.subheading{margin:35px 0 10px;font-size:1.4rem}.embed{position:relative;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000;margin:15px 0}.embed iframe{width:100%;height:100%;border:0}.sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.source{padding:17px;border:1px solid var(--line);border-radius:15px;background:#ffffff08}.source p{color:var(--muted);font-size:.87rem;margin:6px 0}.source a{color:var(--cyan);text-decoration:none}.notice{padding:14px 17px;border-left:3px solid var(--amber);background:#ffc97812;color:var(--muted);border-radius:0 12px 12px 0;margin:18px 0}.citation-box{margin:24px 0;padding:18px 20px;border:1px solid var(--line);border-left:3px solid var(--cyan);border-radius:0 16px 16px 0;background:linear-gradient(145deg,#142239,#0e1727)}.citation-box strong{display:block;color:var(--cyan);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}.citation-box p{margin:0;color:var(--muted);font-size:.9rem}.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}.footer{border-top:1px solid var(--line);padding:30px 5%;text-align:center;color:var(--muted);font-size:.84rem;margin-top:45px}.hidden{display:none!important}
+
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:45px}.hero-art{min-height:260px}.planet{width:220px}.section-head{display:block}.section-head p{margin-top:10px}.trend-groups{grid-template-columns:1fr}.branch-grid,.trend-list,.rubric-grid,.sources{grid-template-columns:1fr}.navlinks{display:none;position:absolute;top:59px;left:0;right:0;padding:18px 5%;background:#080e1b;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.crumb{align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <nav class="nav">
+    <a class="brand" href="#inicio" onclick="goHome()">ASTRA<span>/</span>26</a>
+    <div class="navlinks" id="navlinks">
+      <a href="#apartados" onclick="goHome()">Actividad</a>
+      <a href="#fuentes" onclick="goHome()">Fuentes</a>
+    </div>
+    <div class="nav-actions">
+      <button class="menu" id="menuBtn" aria-label="Abrir menú">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section id="home">
+  <div class="hero" id="inicio">
+    <div>
+      <div class="eyebrow">Investigación tecnológica · ISC · 2026</div>
+      <h1>Ideas que<br>construyen <em>futuro.</em></h1>
+      <p>Espacio de investigación sobre tendencias tecnológicas estratégicas y el campo profesional de Ingeniería en Sistemas Computacionales. Explora los siete apartados clave de la actividad.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#apartados">Explorar los 7 apartados ↗</a>
+      </div>
+      <div class="stats">
+        <span><b>07</b> apartados de la actividad</span>
+        <span><b>10</b> tendencias Gartner 2026</span>
+        <span><b>100%</b> diseño institucional</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="planet"></div>
+      <div class="planet-label"><strong>2026</strong>Radar tecnológico</div>
+    </div>
+  </div>
+
+  <section class="section" id="apartados">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Mapa de navegación</div>
+        <h2>Tu investigación,<br>por capítulos.</h2>
+      </div>
+      <p>Abre un apartado para consultar su estructura institucional, fundamentos técnicos y referencias verificadas.</p>
+    </div>
+    <div class="rubric-grid" id="rubricGrid"></div>
+    <div class="notice">Los apartados del 2 al 7 desarrollan el ecosistema técnico y profesional de ISC: Machine Learning con el modelo de aprendizaje de área de círculo, competencias TI, tecnologías actuales, empleos emergentes, experiencia de egresados y librerías de IA generativa. El apartado 1 desglosa las 10 tendencias de Gartner 2026.</div>
+  </section>
+
+  <section class="section" id="fuentes">
+    <div class="eyebrow">Bibliografía y referencias</div>
+    <h2>Fuentes verificadas.</h2>
+    <p class="muted">Documentación oficial y material audiovisual empleado para fundamentar cada sección de la investigación.</p>
+    <div class="sources">
+      <article class="source">
+        <b>Gartner — Tendencias tecnológicas estratégicas 2026</b>
+        <p>Artículo oficial en español con las diez tendencias estratégicas y los perfiles The Architect, The Synthesist y The Vanguard.</p>
+        <a href="https://www.gartner.es/es/articulos/principales-tendencias-tecnologicas-2026" target="_blank" rel="noopener">Consultar Gartner en español ↗</a>
+      </article>
+      <article class="source">
+        <b>Gartner Newsroom — Comunicado oficial (octubre 2025)</b>
+        <p>Anuncio global que presenta el marco estratégico tecnológico para 2026 y sus proyecciones de adopción empresarial.</p>
+        <a href="https://www.gartner.com/en/newsroom/press-releases/2025-10-20-gartner-identifies-the-top-strategic-technology-trends-for-2026" target="_blank" rel="noopener">Leer comunicado oficial ↗</a>
+      </article>
+      <article class="source">
+        <b>Profe Sang — 12 Trabajos del Futuro (YouTube)</b>
+        <p>Material audiovisual de referencia para el Apartado 05 sobre empleos impulsados por inteligencia artificial, ciberseguridad, RV/RA y robótica.</p>
+        <a href="https://www.youtube.com/watch?v=mX3J7TRI_D8" target="_blank" rel="noopener">Ver en YouTube ↗</a>
+      </article>
+      <article class="source">
+        <b>Carlos Fregoso — Entrevista a un ingeniero en sistemas computacionales</b>
+        <p>Entrevista realizada por Eduardo García Espinosa y Jesús Benito al Ing. Fernando Delgadillo sobre la carrera, redes y sistemas distribuidos.</p>
+        <a href="https://youtu.be/pMtS68-bCLk" target="_blank" rel="noopener">Ver entrevista en YouTube ↗</a>
+      </article>
+    </div>
+  </section>
+</section>
+
+<div id="workspaces"></div>
+</main>
+
+<footer class="footer">ASTRA / 2026 · Proyecto académico de Ingeniería en Sistemas Computacionales</footer>
+
+<script>
+const rubric=[
+{
+  title:'Tendencias tecnológicas según Gartner 2026',
+  weight:'10%',
+  desc:'Las diez tendencias estratégicas identificadas por Gartner para 2026, organizadas en tres arquetipos de liderazgo tecnológico y su impacto empresarial.',
+  citation:'Fuente: Gartner (2025–2026). "Principales tendencias tecnológicas estratégicas para 2026" (Gartner España / Gartner Newsroom).',
+  branches:[
+    ['Contexto de Gartner 2026','Gartner define una tendencia tecnológica estratégica como aquella con potencial disruptivo significativo en los próximos 3 a 5 años, exigiendo decisiones directivas inmediatas en inversión, arquitectura y gobernanza.'],
+    ['The Architect (El arquitecto)','Enfocado en construir bases digitales seguras y escalables: plataformas de desarrollo nativas de IA, supercomputación de IA y computación confidencial basada en hardware (TEE).'],
+    ['The Synthesist (El sintetizador)','Centrado en orquestar capacidades inteligentes: sistemas multiagente colaborativos, modelos de lenguaje específicos de dominio (DSLM) e IA física aplicada a robótica y dispositivos autónomos.'],
+    ['The Vanguard (El vanguardista)','Orientado a proteger el valor y gestionar el riesgo: ciberseguridad preventiva, procedencia digital verificable, plataformas de seguridad de IA y geopatriación de datos.'],
+    ['Aplicación empresarial y contexto en México','Adopción prioritaria en sectores financiero, manufacturero y salud; retos de soberanía de datos, eficiencia energética en centros de datos y capacitación de talento especializado.'],
+    ['Impacto en Ingeniería en Sistemas Computacionales','Transición del desarrollador tradicional hacia roles de diseño de arquitecturas híbridas, auditoría de modelos de IA, ingeniería de seguridad y orquestación de agentes.']
+  ]
+},
+{
+  title:'Programa de Python utilizando Machine Learning',
+  weight:'20%',
+  desc:'Desarrollo de un modelo de aprendizaje automático en Python capaz de entrenarse y aprender iterativamente a calcular el área de un círculo a partir de datos de radio.',
+  citation:'Fuente: Práctica de desarrollo en Python 3 aplicando regresión y aprendizaje supervisado para aproximación matemática.',
+  branches:[
+    ['Objetivo del modelo (Aprendizaje del área del círculo)','Implementación de un script en Python donde el algoritmo aprende mediante datos de entrada (radio $r$) a predecir y calcular de manera autónoma el área del círculo ($A = \\pi r^2$) sin utilizar directamente la fórmula estática inicial.'],
+    ['Generación y preparación del dataset','Creación de un conjunto de datos sintético con múltiples valores de radio y sus respectivas áreas calculadas, aplicando limpieza y normalización con Pandas y NumPy.'],
+    ['Entrenamiento del modelo de Machine Learning','Uso de Scikit-learn para entrenar un modelo de regresión supervisada, alimentándolo con los radios como variables independientes y el área como etiqueta objetivo.'],
+    ['Evaluación y convergencia del aprendizaje','Análisis de la función de pérdida y métricas de error (como el error cuadrático medio - MSE y $R^2$) para comprobar cómo el modelo reduce su margen de error conforme procesa más iteraciones de entrenamiento.'],
+    ['Validación con nuevos datos','Prueba del modelo entrenado ingresando radios inéditos para verificar que la predicción del área del círculo se aproxime con alta precisión al valor matemático real.'],
+    ['Conclusiones técnicas','Demostración práctica de cómo el Machine Learning puede descubrir relaciones geométricas y funcionales puras a partir de ejemplos numéricos tabulares.']
+  ]
+},
+{
+  title:'Habilidades necesarias en empresas de TI',
+  weight:'10%',
+  desc:'Competencias técnicas, metodológicas y humanas demandadas por la industria tecnológica contemporánea.',
+  citation:'Fuente: Análisis de perfiles profesionales TI (2025–2026) y marcos de referencia de ingeniería de software, computación en la nube y ciberseguridad.',
+  branches:[
+    ['Habilidades técnicas (Hard Skills)','Dominio de lenguajes de programación (Python, Java, C++, JavaScript/TypeScript), diseño de bases de datos SQL/NoSQL, redes, arquitectura cloud (AWS, Azure, GCP) y prácticas DevOps.'],
+    ['Habilidades blandas (Soft Skills)','Resolución analítica de problemas complejos, comunicación técnica efectiva, trabajo colaborativo en equipos multidisciplinarios remotos e inteligencia emocional.'],
+    ['Metodologías y herramientas de flujo','Control de versiones con Git y GitHub/GitLab, gestión ágil con Scrum y Kanban, contenerización con Docker, orquestación con Kubernetes e integración continua (CI/CD).'],
+    ['Certificaciones de valor en la industria','Credenciales reconocidas internacionalmente como AWS Certified Cloud Practitioner/Solutions Architect, Cisco CCNA, CompTIA Security+ y certificaciones de Linux Foundation.'],
+    ['Roles de mayor demanda y ruta de desarrollo','Perfiles como Ingeniero de Software Full Stack, Ingeniero de Datos, Arquitecto Cloud, Especialista DevSecOps e Ingeniero de IA; construcción de portafolio con proyectos reales.']
+  ]
+},
+{
+  title:'Tecnologías predominantes y emergentes de la profesión',
+  weight:'10%',
+  desc:'Panorama comparativo entre infraestructuras consolidadas y tecnologías disruptivas en la Ingeniería en Sistemas Computacionales.',
+  citation:'Fuente: Contrastes tecnológicos entre IT Trends (2021) y el radar estratégico de Gartner (2026) sobre infraestructura de cómputo, almacenamiento y redes.',
+  branches:[
+    ['Software y arquitecturas modernas','Predominio de microservicios, contenedores, arquitecturas serverless y APIs REST/GraphQL con frameworks como FastAPI, Spring Boot y React; auge del desarrollo asistido por IA.'],
+    ['Hardware y cómputo especializado','Consolidación de arquitecturas ARM y aceleración por GPU; emergencia de NPU (Unidades de Procesamiento Neuronal) para IA local, Edge Computing y cómputo confidencial en silicio.'],
+    ['Bases de datos y gestión de información','Persistencia relacional con PostgreSQL y MySQL, sistemas NoSQL (MongoDB, Redis) y expansión de bases de datos vectoriales (pgvector, ChromaDB, Pinecone) para búsqueda semántica.'],
+    ['Redes y ciberseguridad','Despliegue de redes 5G, Wi-Fi 6E/7, IPv6, Redes Definidas por Software (SDN) y adopción estándar del modelo de seguridad Zero Trust y cifrado post-cuántico.'],
+    ['Matriz de madurez tecnológica','Contraste entre tecnologías predominantes (nube híbrida, contenedores, SQL, Git) y emergentes (agentes autónomos, IA física, gemelos digitales y computación cuántica).']
+  ]
+},
+{
+  title:'Trabajos del futuro en ciencias computacionales',
+  weight:'10%',
+  desc:'Evolución del mercado laboral y surgimiento de profesiones especializadas derivadas de la inteligencia artificial, la biotecnología y la automatización.',
+  citation:'Fuente: Video de referencia "12 Trabajos del Futuro" — Canal Profe Sang (YouTube, 2021), contrastado con proyecciones de Gartner 2026.',
+  branches:[
+    ['Contexto de transformación laboral','Según las proyecciones citadas en el material de referencia (Thomas Frey y James Canton), millones de empleos tradicionales se automatizarán hacia 2030 mientras surge una mayoría de puestos nuevos basados en tecnología.'],
+    ['Ingeniería de IA, robótica y sistemas autónomos','Desarrolladores de robots e IA aplicada a salud y asistencia personal, diseñadores de sistemas multiagente, ingenieros de MLOps y analistas de tecnologías autónomas para uso público.'],
+    ['Ciberseguridad, privacidad y confianza digital','Expertos en ciberseguridad, protección de datos personales, administradores de huella/desperdicios digitales, arquitectos Zero Trust y auditores de procedencia digital.'],
+    ['Realidad virtual, aumentada y entornos digitales','Desarrolladores de soluciones RV/RA aplicadas a educación, turismo, industria y diseño, así como especialistas en tecnologías descentralizadas (Blockchain) y ecosistemas de eSports.'],
+    ['Convergencia interdisciplinaria (Bioingeniería e Impresión 3D)','Perfiles híbridos donde la computación habilita otras ciencias: diseño CAD/3D de tejidos y órganos artificiales, ingeniería de impresión 3D de edificaciones y sostenibilidad tecnológica.']
+  ]
+},
+{
+  title:'Entrevista a un egresado de ISC o carrera afín',
+  weight:'20%',
+  desc:'Análisis de la trayectoria profesional, inserción en la industria y retos éticos basado en la entrevista al Ing. Fernando Delgadillo (Egresado 2012, Especialidad en Redes y Sistemas Distribuidos).',
+  citation:'Fuente: Entrevista a profesional en activo realizada por Eduardo García Espinosa y Jesús Benito. Canal de YouTube "Carlos Fregoso" (14 de noviembre de 2022). Disponible en: https://youtu.be/pMtS68-bCLk',
+  branches:[
+    ['1. Perfil académico y trayectoria profesional','El entrevistado, Ing. Fernando Delgadillo, concluyó sus estudios de Ingeniería en Sistemas Computacionales en el año 2012 y cuenta con una trayectoria de aproximadamente 10 años ejerciendo profesionalmente, especializándose en redes y sistemas distribuidos.'],
+    ['2. Perfil de ingreso y consejos para estudiantes','El perfil idóneo requiere genuino gusto por la tecnología, alta capacidad para trabajar bajo presión e iniciativa propia. Como consejo principal para mantenerse en la carrera, enfatiza: "Lo principal es no rendirse; si estás teniendo problemas con algún área de estudio, aprende a ser autodidacta".'],
+    ['3. Ética profesional ante incidencias corporativas','La ética es fundamental al ofrecer soluciones tecnológicas honestas e íntegras. El Ing. Delgadillo señala que ante problemáticas o fallas en proyectos, la postura correcta es explicar con transparencia al cliente el origen del error, sin encubrir errores de otros proveedores o personal de la empresa.'],
+    ['4. Aportación a la sociedad y desarrollo tecnológico','La misión del ingeniero en sistemas es solucionar problemáticas complejas en todos los niveles mediante la tecnología. En el contexto actual de México, el desarrollo tecnológico es indispensable para impulsar iniciativas como las "Smart Cities" (ciudades inteligentes), que exigen robustas instalaciones de comunicación y software especializado.'],
+    ['5. Proyección futura de la profesión (Próximos 10 años)','Se proyecta una especialización profunda en asignaturas de programación móvil, desarrollo web, Inteligencia Artificial, redes avanzadas y ciberseguridad. Asimismo, la tendencia laboral se consolida fuertemente hacia el trabajo remoto, permitiendo colaborar desde casa con empresas internacionales ubicadas en cualquier parte del mundo.']
+  ]
+},
+{
+  title:'Librerías de Python utilizadas en IA generativa',
+  weight:'10%',
+  desc:'Ecosistema de frameworks, motores de inferencia y herramientas de orquestación en Python para construir aplicaciones de IA generativa.',
+  citation:'Fuente: Documentación oficial de PyTorch, TensorFlow, Hugging Face (Transformers/Diffusers), OpenAI Whisper y LangChain.',
+  branches:[
+    ['Frameworks base de Deep Learning','PyTorch (Meta) y TensorFlow/Keras (Google) como motores principales de cálculo tensorial, diferenciación automática, entrenamiento e inferencia de modelos generativos.'],
+    ['Ecosistema Hugging Face y NLP','Librerías Transformers, Tokenizers y Datasets para descargar, ajustar (fine-tuning) y ejecutar modelos de lenguaje grandes (LLM) y pequeños (SLM) de código abierto.'],
+    ['Generación multimodal (Imagen, Audio y Video)','Diffusers para modelos de difusión latente (como Stable Diffusion y Flux), OpenAI Whisper para transcripción/procesamiento de voz y OpenCV/Pillow para manipulación visual.'],
+    ['Orquestación, agentes y RAG','LangChain, LangGraph y LlamaIndex para conectar modelos de lenguaje con fuentes de datos externas, memoria conversacional, herramientas y bases de datos vectoriales.'],
+    ['Despliegue y optimización de inferencia','vLLM, Ollama (API en Python) y ONNX Runtime para servir modelos generativos con baja latencia, cuantización de pesos y consumo eficiente de VRAM.']
+  ]
+}
+];
+
+const trends=[
+['01','Plataformas de desarrollo nativas de IA','El arquitecto','Utilizan IA generativa para acelerar la creación de software. Permiten que equipos pequeños —en colaboración con expertos del negocio— desarrollen aplicaciones con mayor rapidez y con controles de seguridad y gobernanza.','Investiga asistentes de programación, generación de código, pruebas automatizadas, revisión humana y riesgos de errores o código inseguro.'],
+['02','Plataformas de supercomputación de IA','El arquitecto','Integran CPU, GPU, aceleradores específicos de IA, memoria y software de orquestación para ejecutar cargas complejas de entrenamiento, simulación y análisis de datos.','Investiga clústeres, GPU, ASIC, computación híbrida, consumo energético y aplicaciones científicas o empresariales.'],
+['03','Computación confidencial','El arquitecto','Protege los datos mientras se procesan mediante entornos de ejecución confiables basados en hardware (TEE). Busca mantener información sensible aislada incluso en infraestructuras compartidas o no confiables.','Investiga TEE, cifrado en uso, privacidad, nube y casos de uso en sectores regulados.'],
+['04','Sistemas multiagente','El sintetizador','Conjunto de agentes de IA que colaboran o interactúan para alcanzar objetivos individuales o comunes. Cada agente puede especializarse en una tarea y coordinarse con otros.','Investiga coordinación, memoria, herramientas, supervisión humana, seguridad y ejemplos de automatización de procesos.'],
+['05','Modelos de lenguaje específicos de dominio','El sintetizador','Modelos de lenguaje entrenados o ajustados con información especializada de una industria, función o proceso. Pueden ofrecer respuestas más precisas y adecuadas al contexto que un modelo general en tareas específicas.','Investiga datos especializados, ajuste fino, evaluación, privacidad, costos y ejemplos en salud, derecho, industria o educación.'],
+['06','IA física','El sintetizador','Integra inteligencia artificial en máquinas y dispositivos que perciben su entorno, toman decisiones y actúan físicamente, como robots, drones y equipos inteligentes.','Investiga robótica, sensores, visión computacional, sistemas autónomos, seguridad y colaboración entre ingeniería y TI.'],
+['07','Ciberseguridad preventiva','El vanguardista','Busca anticipar y bloquear amenazas antes de que se materialicen, en lugar de limitarse a reaccionar después de un incidente. Pueden apoyarse en IA, análisis de amenazas y operaciones de seguridad.','Investiga detección temprana, análisis de comportamiento, inteligencia de amenazas, simulación y controles de protección.'],
+['08','Procedencia digital','El vanguardista','Permite verificar el origen, la propiedad y la integridad de software, datos, medios y procesos. Ayuda a generar confianza en cadenas de suministro digitales y contenido producido con IA.','Investiga SBOM, firmas, registros de auditoría, marcas de agua, metadatos y verificación de contenido.'],
+['09','Plataformas de seguridad de IA','El vanguardista','Centralizan la visibilidad y el control de aplicaciones de IA propias y de terceros. Aplican políticas y protecciones ante riesgos como filtración de datos, instrucciones maliciosas y acciones no autorizadas de agentes.','Investiga inventario de modelos, políticas de uso, monitoreo, protección de datos y controles para agentes.'],
+['10','Geopatriación','El vanguardista','Consiste en trasladar datos y aplicaciones desde nubes públicas globales hacia opciones locales, regionales o soberanas para reducir riesgos geopolíticos y responder a requisitos de residencia y gobernanza de datos.','Investiga soberanía digital, residencia de datos, proveedores regionales, regulación y costos de migración.']
+];
+
+const grid=document.getElementById('rubricGrid'),spaces=document.getElementById('workspaces');
+rubric.forEach((r,i)=>{
+  const b=document.createElement('button');
+  b.className='rubric-card';
+  b.innerHTML=`<span class="rubric-index">0${i+1}</span><span><h3>${r.title}</h3><p>${r.desc}</p><small>Valor en rúbrica: ${r.weight} · Ver apartado ↗</small></span>`;
+  b.addEventListener('click',()=>openPage(i));
+  grid.appendChild(b);
+});
+
+function makeTrendPage(){
+  return `
+    <div class="trend-groups">
+      <article class="theme"><b>THE ARCHITECT</b><h3>El arquitecto</h3><p>Plataformas e infraestructura de IA. Construir bases seguras y escalables.</p></article>
+      <article class="theme"><b>THE SYNTHESIST</b><h3>El sintetizador</h3><p>Aplicaciones y orquestación de IA. Combinar modelos, agentes y sistemas físicos.</p></article>
+      <article class="theme"><b>THE VANGUARD</b><h3>El vanguardista</h3><p>Seguridad, confianza y gobernanza. Proteger el valor digital y gestionar riesgos.</p></article>
+    </div>
+    <div class="trend-list">
+      ${trends.map((t)=>`
+        <article class="trend">
+          <div class="trend-head"><span class="trend-no">${t[0]}</span><div><h3>${t[1]}</h3><span class="category">${t[2]}</span></div></div>
+          <p>${t[3]}</p>
+          <div style="border-top:1px solid var(--line);padding-top:11px;margin-top:10px;">
+            <p style="color:var(--cyan);font-size:0.86rem;font-weight:750;margin:0 0 4px 0;">Guía de investigación:</p>
+            <p style="margin:0;font-size:0.88rem;">${t[4]}</p>
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+}
+
+function openPage(i){
+  document.getElementById('home').classList.add('hidden');
+  spaces.innerHTML='';
+  const r=rubric[i];
+  
+  const media=i===4?`
+    <h3 class="subheading">Material audiovisual de referencia: 12 Trabajos del Futuro</h3>
+    <p class="muted">Video de apoyo del canal Profe Sang utilizado para contrastar los empleos emergentes en IA, ciberseguridad, robótica y tecnologías inmersivas.</p>
+    <div class="embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/mX3J7TRI_D8" title="12 Trabajos del Futuro (gracias a la inteligencia artificial y nuevas tecnologías)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  `:(i===5?`
+    <h3 class="subheading">Entrevista de referencia en video</h3>
+    <p class="muted">Entrevista al Ing. Fernando Delgadillo realizada por Eduardo García Espinosa y Jesús Benito (Canal Carlos Fregoso).</p>
+    <div class="embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/pMtS68-bCLk" title="Entrevista a un ingeniero en sistemas computacionales" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  `:'');
+
+  const citationBlock = r.citation ? `
+    <div class="citation-box">
+      <strong>Fuente y referencia del apartado</strong>
+      <p>${r.citation}</p>
+    </div>
+  ` : '';
+
+  const page=document.createElement('section');
+  page.className='workspace active';
+  page.innerHTML=`
+    <div class="crumb">
+      <button class="back" onclick="goHome()">← Regresar al mapa de apartados</button>
+      <span class="eyebrow">Apartado 0${i+1} / 07 · ${r.weight} de la evaluación</span>
+    </div>
+    <div class="eyebrow">Área de investigación</div>
+    <h2>${r.title}</h2>
+    <p class="intro">${r.desc}</p>
+    ${media}
+    ${i===0?makeTrendPage():''}
+    
+    <h3 class="subheading">Desarrollo y estructura del apartado</h3>
+    <div class="branch-grid">
+      ${r.branches.map((br)=>`
+        <article class="branch">
+          <h3>${br[0]}</h3>
+          <p>${br[1]}</p>
+        </article>
+      `).join('')}
+    </div>
+
+    ${citationBlock}
+
+    <div class="toolbar">
+      <button class="btn primary" onclick="goHome()">Volver al inicio</button>
+    </div>
+  `;
+
+  spaces.appendChild(page);
+  window.location.hash='apartado-'+(i+1);
+  window.scrollTo({top:0,behavior:'smooth'});
+  document.getElementById('navlinks').classList.remove('open');
+}
+
+function goHome(){
+  document.getElementById('home').classList.remove('hidden');
+  spaces.innerHTML='';
+  window.location.hash='inicio';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+</script>
+</body>
+</html>
